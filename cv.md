@@ -1,6 +1,5 @@
 # **KIRICHENKO MAXIM**
 
-***
 
 ### Contacts:
 * **Location:** *Murmansk, Russia*
