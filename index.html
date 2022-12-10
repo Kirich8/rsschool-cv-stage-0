@@ -1,13 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>CV Kirichenko Maxim</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/null.css">
+    <title>CV</title>
 </head>
+
 <body>
-    <h1 class="title">Kirichenko Maxim</h1>
+    <div class="wrapper">
+        <header class="header__menu menu">
+            <nav class="menu__body">
+                <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="#contacts">Contacts</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#about">About me</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#skills">Skills</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#code">Code example</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#education">Education</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#projects">Projects</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#languages">Languages</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="main__left left">
+                <div class="left__photo">
+                    <img class="photo__image" src="img/photo.webp" alt="Photo CV">
+                    <div class="photo__info">
+                        <h1 class="photo__title">KIRICHENKO MAXIM</h1>
+                        <h3 class="photo__subtitle">Frontend developer</h3>
+                    </div>
+                </div>
+                <div id="contacts" class="left__contacts">
+                    <h2 class="contacts__title title">Contacts</h2>
+                    <ul class="contacts__list">
+                        <li class="contacts__item location"><b>Location:</b> Murmansk, Russia</li>
+                        <li class="contacts__item phone"><b>Phone:</b> +7 (953) 301-69-95</li>
+                        <li class="contacts__item email"><b>Email:</b> kirichenkomaxim@icloud.com</li>
+                        <li class="contacts__item telegram"><b>Telegram:</b> @kirich88</li>
+                    </ul>
+                </div>
+                <div id="skills" class="left__skills">
+                    <h2 class="skills__title title">Skills</h2>
+                    <ul class="skills__list">
+                        <li class="skills__item html"></li>
+                        <li class="skills__item css"></li>
+                        <li class="skills__item scss"></li>
+                        <li class="skills__item js"></li>
+                        <li class="skills__item react"></li>
+                        <li class="skills__item git"></li>
+                    </ul>
+                </div>
+                <div id="languages" class="left__languages">
+                    <h2 class="languages__title title">Languages</h2>
+                    <ul class="languages__list">
+                        <li class="languages__item"><b>Russian</b> - Intermediate</li>
+                        <li class="languages__item"><b>English</b> - Basic</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main__right right">
+                <div id="about" class="right__about">
+                    <h2 class="about__title title">About me</h2>
+                    <p class="about__text">My goal is to connect myself with the world of programming, learn new
+                        technologies and find my first job. I have good interpersonal skills, am an excellent team
+                        worker and very willing to learn and develop new skills.</p>
+                </div>
+                <div id="code" class="right__code">
+                    <h2 class="code__title title">Code example</h2>
+                    <h3 class="code__subtitle">Rock Paper Scissors</h3>
+                    <p class="code__text">Let's play! You have to return which player won! In case of a draw return
+                        Draw!.</p>
+                    <p class="code__code">
+                        const rps = (p1, p2) => { <br>
+                        &nbsp;&nbsp;&nbsp;if ((p1 == 'rock') && (p2 == 'scissors')) { <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return `Player 1 won!`; <br>
+                        &nbsp;&nbsp;&nbsp;} else if ((p1 === 'scissors') && (p2 === 'paper')) { <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return `Player 1 won!`; <br>
+                        &nbsp;&nbsp;&nbsp;} else if ((p1 === 'paper') && (p2 === 'rock')) { <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return `Player 1 won!`; <br>
+                        &nbsp;&nbsp;&nbsp;} else if (p1 == p2) { <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'Draw!'; <br>
+                        &nbsp;&nbsp;&nbsp;} else { <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return `Player 2 won!`; <br>
+                        &nbsp;&nbsp;&nbsp;}; <br>
+                        };
+                    </p>
+                </div>
+                <div id="education" class="right__education">
+                    <h2 class="education__title title">Education</h2>
+                    <div class="education__next">
+                        <p class="college__age">2009 - 2013</p>
+                        <div class="education__left">
+                            <h3 class="college__name">GAPOU MO "MKEIIT"</h3>
+                            <p class="college__text">Programming in computer systems</p>
+                        </div>
+                    </div>
+                    <div class="education__next">
+                        <p class="college__age">2022</p>
+                        <div class="education__left">
+                            <h3 class="college__name">Freelancer for life</h3>
+                            <p class="college__text">Site layout</p>
+                        </div>
+                    </div>
+                    <div class="education__next">
+                        <p class="college__age">Now</p>
+                        <div class="education__left">
+                            <h3 class="college__name">RS School</h3>
+                            <p class="college__text">JavaScript/Front-end</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="projects" class="right__projects">
+                    <h2 class="projects__title title">Projects</h2>
+                    <div class="project__list">
+                        <div class="project__one">
+                            <a href="https://kirich8.github.io/gericht/" target="_blank"><img src="img/projects/gericht.webp" alt="project" class="project__image"></a>
+                        </div>
+                        <div class="project__one">
+                            <a href="https://kirich8.github.io/atomflot-parallax/" target="_blank"><img src="img/projects/atomflot.webp" alt="project" class="project__image"></a>
+                        </div>
+                        <div class="project__one">
+                            <a href="https://kirich8.github.io/anime/index.html" target="_blank"><img src="img/projects/anime.webp" alt="project" class="project__image"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <a href="https://github.com/Kirich8" target="_blank"><img class="github-svg" src="img/github.svg" alt="github"></a>
+            <p>2022</p>
+            <a href="https://rs.school/js/" target="_blank"><img class="rs-svg" src="img/rs_school_js.svg" alt="rsschool"></a>
+        </footer>
+    </div>
 </body>
+
 </html>
